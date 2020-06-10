@@ -1,0 +1,165 @@
+/* start setting */
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+}
+a {
+    text-decoration: none;
+    color:  white;
+    font-weight: bold;
+}
+
+li {
+    text-decoration: none;
+}
+span {
+    color: yellow;
+}
+.grid{ 
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-row: 100px;
+    justify-content: space-evenly;
+   
+ }
+ img {
+     width: 100%;
+     height: auto;
+ }
+ .btn {
+     padding: 5px;
+     margin-top: 20px;
+     color:wheat;
+     font-weight: 700;
+     font-size:1.1rem;
+     background-color: yellow;
+     border: 1px solid yellow;
+ }
+ 
+  
+
+/* header styling */
+#header {
+    background-color: black;
+    height: 10vh;
+    border-bottom: 2px solid yellowgreen;
+    font-size: 1.2rem;
+}
+#header > .logo {
+    grid-column: 1/5;
+    text-align: center;
+    padding: 3px;
+}
+
+
+
+
+#header > .nav-bar {
+    grid-column: 5/10;
+    padding: 25px;
+}
+#header > .nav-bar a {
+    margin-left: 20px;
+    
+    
+
+}
+
+#header > .nav-bar a:hover{
+   color: yellow;
+}
+
+#header > .button {
+    grid-column: 10/13;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 15px ;
+    border-radius:30%;
+    background-color: yellow;
+    width: 150px;
+    border: 1px solid yellow;
+}
+
+/* Styling section-1 */
+
+#section-1 {
+    width: 100%;
+    height:100vh;
+    position: relative;
+    background-image: url(asset/slider-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#section-1 > .container {
+   grid-column: 1/7;
+ 
+   padding: 270px 0 30px 50px;
+  
+    
+   
+   
+}
+#section-1> .container h2 {
+    font-size: 3rem;
+    
+}
+#section-1> .container p {
+    font-size: 1.4rem;
+    color: white;
+    font-weight: bold;
+}
+#section-1> .container a {
+    
+    text-decoration: none;
+    background-color: yellow;
+    color: #333333;
+    padding: 2px 6px 2px 6px;
+    border-top: 1px solid #CCCCCC;
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #CCCCCC;
+    font-size: 1.8rem;
+    border-radius: 20%;
+}
+
+/* styling section-2 */
+
+#section-2 {
+    width: 90%;
+    height: 400px;
+    font-size: 1.2rem;
+    margin:100px auto;
+    text-align: center;
+    color: wheat;
+    border-bottom: 2px solid whitesmoke;
+    
+    
+}
+
+#section-2 .game-1 {
+    grid-column: span 3;
+    background-image: url(asset/1.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+#section-2 .game-2 {
+    grid-column: span 3;
+    background-image: url(asset/2.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#section-2 .game-3 {
+    grid-column:span 3;
+    background-image: url(asset/3.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#section-2 .game-4{
+    grid-column: span 3;
+    background-image: url(asset/4.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
